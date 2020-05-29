@@ -57,13 +57,13 @@ dl.subcategories { margin-left: 2em }
 </style>
 
 <section class=informative>
-<h2>Design</h2>
+<h2 id=design>Design</h2>
 
 <p>
 The WebDriver standard attempts to follow a number of design goals:
 
 <section>
-<h3>Compatibility</h3>
+<h3 id=compatibility>Compatibility</h3>
 
 <p>
 This specification is derived from the popular
@@ -78,7 +78,7 @@ to avoid unexpected breakages.
 </section>
 
 <section>
-<h3>Simplicity</h3>
+<h3 id=simplicity>Simplicity</h3>
 
 <p>
 The largest intended group of users of this specification
@@ -91,7 +91,7 @@ and <a data-lt="Element Click">clicking</a> elements.
 </section>
 
 <section>
-<h3>Extensions</h3>
+<h3 id=extensions>Extensions</h3>
 
 <p>
 WebDriver provides a mechanism for others to define extensions to the protocol
@@ -114,7 +114,7 @@ rather than performance, in mind.
 
 
 <section>
-<h2>Terminology</h2>
+<h2 id=terminology>Terminology</h2>
 
 <p>
 In equations, all numbers are integers,
@@ -182,7 +182,7 @@ and decorations (such as operating system widget borders).
 
 
 <section>
-<h2>Interface</h2>
+<h2 id=interface>Interface</h2>
 
 <p>
 The <dfn>webdriver-active flag</dfn>
@@ -224,7 +224,7 @@ It is acknowledged that this is complementary to the Evil Bit [[RFC3514]].
 </section>
 
 <section>
-<h2>Nodes</h2>
+<h2 id=nodes>Nodes</h2>
 
 <p>The WebDriver protocol consists of communication between:
 
@@ -285,7 +285,7 @@ In all other cases it must be true.
 </section> <!-- /Nodes -->
 
 <section>
-<h2>Protocol</h2>
+<h2 id=protocol>Protocol</h2>
 
 <p>WebDriver <a>remote ends</a> must provide
  an <a>HTTP compliant</a> wire protocol
@@ -298,7 +298,7 @@ In all other cases it must be true.
  no requirements are made upon their exposed user-facing API.
 
 <section>
-<h3>Algorithms</h3>
+<h3 id=algorithms>Algorithms</h3>
 
 <p>Various parts of this specification are written in terms of step-by-step algorithms.
  The details of these algorithms do not have any normative significance;
@@ -354,7 +354,7 @@ In all other cases it must be true.
 
 
 <section>
-<h3>Commands</h3>
+<h3 id=commands>Commands</h3>
 
 <p>
 The WebDriver protocol is organised into <a>commands</a>.
@@ -372,7 +372,7 @@ when it receives a particular <a>command</a>.
 
 
 <section>
-<h3>Processing model</h3>
+<h3 id=processing-model>Processing model</h3>
 
 <p>The <a>remote end</a> is an HTTP server
  reading requests from the client and writing responses,
@@ -565,7 +565,7 @@ when it receives a particular <a>command</a>.
 </section> <!-- /Processing model -->
 
 <section>
-<h3>Routing requests</h3>
+<h3 id=routing-requests>Routing requests</h3>
 
 <p><dfn data-lt="routing requests">Request routing</dfn>
  is the process of going from a <a>HTTP request</a>
@@ -622,7 +622,7 @@ when it receives a particular <a>command</a>.
 </section> <!-- /Routing requests -->
 
 <section>
-<h3>Endpoints</h3>
+<h3 id=endpoints>Endpoints</h3>
 
 <p>The following <dfn data-lt=endpoints>table of endpoints</dfn> lists
  the <a>method</a> and <a>URI template</a> for each <a>endpoint
@@ -987,7 +987,7 @@ when it receives a particular <a>command</a>.
 </section> <!-- /Endpoints -->
 
 <section>
-<h3>Errors</h3>
+<h3 id=errors>Errors</h3>
 
 <p><a>Errors</a> are represented in the WebDriver protocol
  by an <a>HTTP response</a> with an <a>HTTP status</a> in the 4xx or 5xx range,
@@ -1267,7 +1267,7 @@ when it receives a particular <a>command</a>.
 </section> <!-- /Errors -->
 
 <section>
-<h3>Extensions</h3>
+<h3 id=extensions>Extensions</h3>
 
 <p>Using the terminology defined in this section, others may define additional
  commands that seamlessly integrate with the standard protocol. This allows
@@ -1391,7 +1391,7 @@ specification.
 </section> <!-- /Protocol -->
 
 <section>
-<h2>Capabilities</h2>
+<h2 id=capabilities>Capabilities</h2>
 
 <p>WebDriver <dfn data-lt="capability">capabilities</dfn>
  are used to communicate the features supported by a given implementation.
@@ -1501,7 +1501,7 @@ with a "<code>moz:</code>" prefix:
 </table>
 
 <section>
-<h3>Proxy</h3>
+<h3 id=proxy>Proxy</h3>
 
 <p>The <dfn>proxy configuration</dfn> capability
  is a JSON <a>Object</a> nested
@@ -1666,7 +1666,7 @@ with a "<code>moz:</code>" prefix:
 </section> <!-- /Proxy -->
 
 <section>
-<h3>Processing capabilities</h3>
+<h3 id=processing-capabilities>Processing capabilities</h3>
 
 <p>To <dfn data-lt="capabilities processing">process capabilities</dfn>
  with argument <var>parameters</var>,
@@ -2067,7 +2067,7 @@ with a "<code>moz:</code>" prefix:
 </section> <!-- /Capabilities -->
 
 <section>
-<h2>Sessions</h2>
+<h2 id=sessions>Sessions</h2>
 
 <p>A <a>session</a> is equivalent to a single instantiation of a particular user agent,
  including all its child browsers.
@@ -2413,7 +2413,7 @@ If the creation fails, a <a>session not created</a> <a>error</a> is returned.
 </section> <!-- /New Session -->
 
 <section>
-<h3><dfn>Delete Session</dfn></h3>
+<h3 id=delete-session><dfn>Delete Session</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2437,7 +2437,7 @@ If the creation fails, a <a>session not created</a> <a>error</a> is returned.
 </section> <!-- /Delete Session -->
 
 <section>
-<h3><dfn>Status</dfn></h3>
+<h3 id=status><dfn>Status</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2492,7 +2492,7 @@ If the creation fails, a <a>session not created</a> <a>error</a> is returned.
 </section> <!-- /Sessions -->
 
 <section>
-<h2>Timeouts</h2>
+<h2 id=timeouts>Timeouts</h2>
 
 <p>
 A <dfn>timeouts configuration</dfn> is a record
@@ -2635,7 +2635,7 @@ Return <a>success</a> with data <var>timeouts</var>.
 
 
 <section>
-<h3><dfn>Get Timeouts</dfn></h3>
+<h3 id=get-timeouts><dfn>Get Timeouts</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2656,7 +2656,7 @@ of the <a>active session</a>’s <a>timeouts configuration</a>.
 
 
 <section>
-<h3><dfn>Set Timeouts</dfn></h3>
+<h3 id=set-timeouts><dfn>Set Timeouts</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2690,7 +2690,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 
 
 <section>
-<h2>Navigation</h2>
+<h2 id=navigation>Navigation</h2>
 
 <p>The <a>commands</a> in this section allow navigation of
  the <a>current top-level browsing context</a> to new URLs
@@ -2824,7 +2824,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </dl>
 
 <section>
-<h3><dfn>Navigate To</dfn></h3>
+<h3 id=navigate-to><dfn>Navigate To</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2908,7 +2908,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </section> <!-- /Navigate To-->
 
 <section>
-<h3><dfn>Get Current URL</dfn></h3>
+<h3 id=get-current-url><dfn>Get Current URL</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2938,7 +2938,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </section>
 
 <section>
-<h3><dfn>Back</dfn></h3>
+<h3 id=back><dfn>Back</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -2983,7 +2983,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </section> <!-- /Back -->
 
 <section>
-<h3><dfn>Forward</dfn></h3>
+<h3 id=forward><dfn>Forward</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3028,7 +3028,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </section> <!-- /Forward -->
 
 <section>
-<h3><dfn>Refresh</dfn></h3>
+<h3 id=refresh><dfn>Refresh</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3071,7 +3071,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </section> <!-- /Refresh -->
 
 <section>
-<h3><dfn>Get Title</dfn></h3>
+<h3 id=get-title><dfn>Get Title</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3106,7 +3106,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 </section> <!-- /Navigation -->
 
 <section>
-<h2>Contexts</h2>
+<h2 id=contexts>Contexts</h2>
 
 <p>Many WebDriver <a>commands</a> happen in the context of either
  the <a>current browsing context</a> or <a>current top-level browsing context</a>.
@@ -3164,7 +3164,7 @@ section of the [[HTML]] specification,
 commands are unaffected by whether the operating system window has focus or not.
 
 <section>
-<h3><dfn>Get Window Handle</dfn></h3>
+<h3 id=get-window-handle><dfn>Get Window Handle</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3189,7 +3189,7 @@ commands are unaffected by whether the operating system window has focus or not.
 </section> <!-- /Get Window Handle -->
 
 <section>
-<h3><dfn>Close Window</dfn></h3>
+<h3 id=close-window><dfn>Close Window</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3221,7 +3221,7 @@ commands are unaffected by whether the operating system window has focus or not.
 </section> <!-- /Close Window -->
 
 <section>
-<h3><dfn>Switch To Window</dfn></h3>
+<h3 id=switch-to-window><dfn>Switch To Window</dfn></h3>
 
 <table class="simple jsoncommand">
   <tr>
@@ -3270,7 +3270,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Switch To Window -->
 
 <section>
-<h3><dfn>Get Window Handles</dfn></h3>
+<h3 id=get-window-handles><dfn>Get Window Handles</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3305,7 +3305,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Get Window Handles -->
 
 <section>
-<h3><dfn>New Window</dfn></h3>
+<h3 id=new-window><dfn>New Window</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3375,7 +3375,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /New Window -->
 
 <section>
-<h3><dfn>Switch To Frame</dfn></h3>
+<h3 id=switch-to-frame><dfn>Switch To Frame</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3476,7 +3476,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Switch To Frame -->
 
 <section>
-<h3><dfn>Switch To Parent Frame</dfn></h3>
+<h3 id=switch-to-parent-frame><dfn>Switch To Parent Frame</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3515,7 +3515,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Switch To Parent Frame -->
 
 <section>
-<h3>Resizing and positioning windows</h3>
+<h3 id=resizing-and-positioning-windows>Resizing and positioning windows</h3>
 
 <p>WebDriver provides <a>commands</a>
  for interacting with the operating system window
@@ -3635,7 +3635,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
  or until the operation times out.
 
 <section>
-<h4><dfn>Get Window Rect</dfn></h4>
+<h4 id=get-window-rect><dfn>Get Window Rect</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3669,7 +3669,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Get Window Rect -->
 
 <section>
-<h4><dfn>Set Window Rect</dfn></h4>
+<h4 id=set-window-rect><dfn>Set Window Rect</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3795,7 +3795,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Set Window Rect -->
 
 <section>
-<h4><dfn>Maximize Window</dfn></h4>
+<h4 id=maximize-window><dfn>Maximize Window</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3842,7 +3842,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Maximize Window -->
 
 <section>
-<h4><dfn>Minimize Window</dfn></h4>
+<h4 id=minimize-window><dfn>Minimize Window</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3885,7 +3885,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Minimize Window -->
 
 <section>
-<h4><dfn>Fullscreen Window</dfn></h4>
+<h4 id=fullscreen-window><dfn>Fullscreen Window</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3926,7 +3926,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Contexts -->
 
 <section>
-<h2>Elements</h2>
+<h2 id=elements>Elements</h2>
 
 <p>A <dfn data-lt="web elements">web element</dfn>
  is an abstraction used to identify an <a>element</a>
@@ -4089,7 +4089,7 @@ argument <var>reference</var>, run the following steps:
 
 
 <section>
-<h3>Interactability</h3>
+<h3 id=interactability>Interactability</h3>
 
 <p>In order to determine if an <a>element</a>
  can be interacted with using pointer actions,
@@ -4278,7 +4278,7 @@ argument <var>reference</var>, run the following steps:
 </ol>
 
 <section>
-<h4>Locator strategies</h4>
+<h4 id=locator-strategies>Locator strategies</h4>
 
 <p>An <dfn data-lt=strategy>element location strategy</dfn>
  is an <a>enumerated attribute</a>
@@ -4320,7 +4320,7 @@ argument <var>reference</var>, run the following steps:
 </table>
 
 <section>
-<h5>CSS selectors</h5>
+<h5 id=css-selectors>CSS selectors</h5>
 
 <p>To find a <a>web element</a> with
  the <dfn>CSS Selector</dfn> <a>strategy</a>
@@ -4338,7 +4338,7 @@ argument <var>reference</var>, run the following steps:
 </section> <!-- /CSS selectors -->
 
 <section>
-<h5>Link text</h5>
+<h5 id=link-text>Link text</h5>
 
 <p>To find a <a>web element</a>
  with the <dfn data-lt="link text selector">Link Text</dfn> <a>strategy</a>
@@ -4373,7 +4373,7 @@ argument <var>reference</var>, run the following steps:
 </section> <!-- /Link text -->
 
 <section>
-<h5>Partial link text</h5>
+<h5 id=partial-link-text>Partial link text</h5>
 
 <p>The <dfn data-lt="partial link text selector">Partial link text</dfn> <a>strategy</a>
  is very similar to the <a>Link Text</a> <a>strategy</a>,
@@ -4411,7 +4411,7 @@ argument <var>reference</var>, run the following steps:
 </section> <!-- /Partial link text -->
 
 <section>
-<h5>Tag name</h5>
+<h5 id=tag-name>Tag name</h5>
 
 <p>To find a <a>web element</a> with the <dfn>Tag
  Name</dfn> <a>strategy</a> return <a>success</a> with data set to the
@@ -4423,7 +4423,7 @@ argument <var>reference</var>, run the following steps:
 </section> <!-- /Tag name -->
 
 <section>
-<h5>XPath</h5>
+<h5 id=xpath>XPath</h5>
 
 <p>To find a <a>web element</a> with
  the <dfn>XPath Selector</dfn> <a>strategy</a>
@@ -4474,7 +4474,7 @@ argument <var>reference</var>, run the following steps:
 </section> <!-- /Locator strategies -->
 
 <section>
-<h4><dfn>Find Element</dfn></h4>
+<h4 id=find-element><dfn>Find Element</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4544,7 +4544,7 @@ session.execute("arguments[0].remove()", [body]);
 </section> <!-- /Find Element -->
 
 <section>
-<h4><dfn>Find Elements</dfn></h4>
+<h4 id=find-elements><dfn>Find Elements</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4591,7 +4591,7 @@ session.execute("arguments[0].remove()", [body]);
 </section> <!-- /Find Elements -->
 
 <section>
-<h4><dfn>Find Element From Element</dfn></h4>
+<h4 id=find-element-from-element><dfn>Find Element From Element</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4641,7 +4641,7 @@ session.execute("arguments[0].remove()", [body]);
 </section> <!-- /Find Element From Element -->
 
 <section>
-<h4><dfn>Find Elements From Element</dfn></h4>
+<h4 id=find-elements-from-element><dfn>Find Elements From Element</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4686,7 +4686,7 @@ session.execute("arguments[0].remove()", [body]);
 </section> <!-- /Find Elements From Element -->
 
 <section>
-<h4><dfn>Get Active Element</dfn></h4>
+<h4 id=get-active-element><dfn>Get Active Element</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4720,7 +4720,7 @@ session.execute("arguments[0].remove()", [body]);
 </section> <!-- /Retrieval -->
 
 <section>
-<h3>State</h3>
+<h3 id=state>State</h3>
 
 <p>To <dfn>calculate the absolute position</dfn> of <a><var>element</var></a>:
 
@@ -4789,7 +4789,7 @@ session.execute("arguments[0].remove()", [body]);
 </dl>
 
 <section>
-<h4><dfn>Is Element Selected</dfn></h4>
+<h4 id=is-element-selected><dfn>Is Element Selected</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4843,7 +4843,7 @@ or on <a><code>option</code> elements</a>.
 </section> <!-- /Is Element Selected -->
 
 <section>
-<h4><dfn>Get Element Attribute</dfn></h4>
+<h4 id=get-element-attribute><dfn>Get Element Attribute</dfn></h4>
 
 <table class="simple jsoncommand">
   <tr>
@@ -4895,7 +4895,7 @@ The <a>remote end steps</a> are:
 </section> <!-- /Get Element Attribute -->
 
 <section>
-<h4><dfn>Get Element Property</dfn></h4>
+<h4 id=get-element-property><dfn>Get Element Property</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4932,7 +4932,7 @@ The <a>remote end steps</a> are:
 </section> <!-- /Get Element Property -->
 
 <section>
-<h4><dfn>Get Element CSS Value</dfn></h4>
+<h4 id=get-element-css-value><dfn>Get Element CSS Value</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -4975,7 +4975,7 @@ The <a>remote end steps</a> are:
 </section> <!-- /Get CSS Value -->
 
 <section>
-<h4><dfn>Get Element Text</dfn></h4>
+<h4 id=get-element-text><dfn>Get Element Text</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5035,7 +5035,7 @@ with the <a>Unicode character property</a> "<code>WSpace=Y</code>" or "<code>WS<
 </section> <!-- /Get Element Text -->
 
 <section>
-<h4><dfn>Get Element Tag Name</dfn></h4>
+<h4 id=get-element-tag-name><dfn>Get Element Tag Name</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5068,7 +5068,7 @@ with the <a>Unicode character property</a> "<code>WSpace=Y</code>" or "<code>WS<
 </section> <!-- /Get Element Tag Name -->
 
 <section>
-<h4><dfn>Get Element Rect</dfn></h4>
+<h4 id=get-element-rect><dfn>Get Element Rect</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5151,7 +5151,7 @@ Width of the <a>web element</a>’s
 </section> <!-- /Get Element Rect -->
 
 <section>
-<h4><dfn>Is Element Enabled</dfn></h4>
+<h4 id=is-element-enabled><dfn>Is Element Enabled</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5192,7 +5192,7 @@ Width of the <a>web element</a>’s
 </section> <!-- /Is Element Enabled -->
 
 <section>
-  <h4><dfn>Get Computed Role</dfn></h4>
+  <h4 id=get-computed-role><dfn>Get Computed Role</dfn></h4>
 
   <table class="simple jsoncommand">
     <tr>
@@ -5225,7 +5225,7 @@ Width of the <a>web element</a>’s
 </section> <!-- /Get Element Computed Role -->
 
 <section>
-  <h4><dfn>Get Computed Label</dfn></h4>
+  <h4 id=get-computed-label><dfn>Get Computed Label</dfn></h4>
 
   <table class="simple jsoncommand">
     <tr>
@@ -5296,7 +5296,7 @@ Width of the <a>web element</a>’s
  to an empty string (thus clearing the element’s child nodes).
 
 <section>
-<h4><dfn>Element Click</dfn></h4>
+<h4 id=element-click><dfn>Element Click</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5476,7 +5476,7 @@ an <a>element not interactable</a> <a>error</a> is returned.
 </section> <!-- /Element Click -->
 
 <section>
-<h4><dfn>Element Clear</dfn></h4>
+<h4 id=element-clear><dfn>Element Clear</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5573,7 +5573,7 @@ an <a>element not interactable</a> <a>error</a> is returned.
 </section> <!-- /Element Clear -->
 
 <section>
-<h4><dfn>Element Send Keys</dfn></h4>
+<h4 id=element-send-keys><dfn>Element Send Keys</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5967,10 +5967,10 @@ If an <a>error</a> is returned, return that <a>error</a>
 </section> <!-- /Elements -->
 
 <section>
-<h2>Document</h2>
+<h2 id=document>Document</h2>
 
 <section>
-<h3><dfn>Get Page Source</dfn></h3>
+<h3 id=get-page-source><dfn>Get Page Source</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6012,7 +6012,7 @@ of the <a>current browsing context</a> <a>active document</a>.
 </section> <!-- /Get Page Source -->
 
 <section>
-<h3>Executing Script</h3>
+<h3 id=executing-script>Executing Script</h3>
 
 <p>
 A <dfn>collection</dfn> is an <a>Object</a>
@@ -6278,7 +6278,7 @@ a <a>remote end</a> must run the following steps:
  and is therefore not subject to the document CSP <a>directives</a>.
 
 <section>
-<h4><dfn>Execute Script</dfn></h4>
+<h4 id=execute-script><dfn>Execute Script</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6334,7 +6334,7 @@ a <a>remote end</a> must run the following steps:
 </section> <!-- /Execute Script -->
 
 <section>
-<h4><dfn>Execute Async Script</dfn></h4>
+<h4 id=execute-async-script><dfn>Execute Async Script</dfn></h4>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6427,7 +6427,7 @@ The first argument provided to the function will be serialized to JSON and retur
 
 
 <section>
-<h2>Cookies</h2>
+<h2 id=cookies>Cookies</h2>
 
 <p>This section describes the interaction with <a>cookies</a>
  as described in [[RFC6265]].
@@ -6587,7 +6587,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </ol>
 
 <section>
-<h3><dfn>Get All Cookies</dfn></h3>
+<h3 id=get-all-cookies><dfn>Get All Cookies</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6625,7 +6625,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </section> <!-- /Get All Cookies -->
 
 <section>
-<h3><dfn>Get Named Cookie</dfn></h3>
+<h3 id=get-named-cookie><dfn>Get Named Cookie</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6658,7 +6658,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </section> <!-- /Get Named Cookie -->
 
 <section>
-<h3><dfn data-lt="adding a cookie">Add Cookie</dfn></h3>
+<h3 id=add-cookie><dfn data-lt="adding a cookie">Add Cookie</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6741,7 +6741,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </section> <!-- /Add Cookie -->
 
 <section>
-<h3><dfn>Delete Cookie</dfn></h3>
+<h3 id=delete-cookie><dfn>Delete Cookie</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6771,7 +6771,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </section> <!-- /Delete Cookie -->
 
 <section>
-<h3><dfn>Delete All Cookies</dfn></h3>
+<h3 id=delete-all-cookies><dfn>Delete All Cookies</dfn></h3>
 
 <table class=simple>
  <tr>
@@ -6800,7 +6800,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </section> <!-- /Cookies -->
 
 <section>
-<h2><dfn>Actions</dfn></h2>
+<h2 id=actions><dfn>Actions</dfn></h2>
 
 <p>The Actions API provides a low-level interface
  for providing virtualised device input to the web browser.
@@ -6885,7 +6885,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </aside> <!-- /example -->
 
 <section>
-<h3>Input sources</h3>
+<h3 id=input-sources>Input sources</h3>
 
 <p class=note>
 The objects and properties defined in this section are spec-internal constructs
@@ -7136,7 +7136,7 @@ and a <code>y</code> property which is an unsigned integer.
 
 
 <section>
-<h3>Ticks</h3>
+<h3 id=ticks>Ticks</h3>
 
 <p>A <dfn data-lt="ticks">tick</dfn> is the basic unit of time over
  which actions can be performed. During a <a>tick</a>, each <a>input source</a> has
@@ -7199,7 +7199,7 @@ from a machine utilisation perspective.
 
 
 <section>
-<h3>Processing actions</h3>
+<h3 id=processing-actions>Processing actions</h3>
 
 <p>The algorithm for <a data-lt="extract an action sequence">
  extracting an action sequence from a request</a> takes the
@@ -7644,7 +7644,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h3>Dispatching actions</h3>
+<h3 id=dispatching-actions>Dispatching actions</h3>
 
 <p>The algorithm to <a>dispatch actions</a> takes a list of actions
  grouped by <a>tick</a>, and then causes each action to be run at the
@@ -7770,7 +7770,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h4>General actions</h4>
+<h4 id=general-actions>General actions</h4>
 
 <p>When required to <dfn>dispatch a pause action</dfn> with
  arguments <var>source id</var>, <var>action object</var>,
@@ -7784,7 +7784,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h4>Keyboard actions</h4>
+<h4 id=keyboard-actions>Keyboard actions</h4>
 
 <p>The <dfn>normalised key value</dfn> for a raw key <var>key</var>
  is, if <var>key</var> appears in the table below, the string value in
@@ -8225,7 +8225,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h4>Pointer actions</h4>
+<h4 id=pointer-actions>Pointer actions</h4>
 
 <p>When required to <dfn>dispatch a pointerDown action</dfn> with
  arguments <var>source id</var>, <var>action object</var>,
@@ -8530,7 +8530,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h3><dfn>Perform Actions</dfn></h3>
+<h3 id=perform-actions><dfn>Perform Actions</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8567,7 +8567,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h3><dfn>Release Actions</dfn></h3>
+<h3 id=release-actions><dfn>Release Actions</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8616,7 +8616,7 @@ It also clears all the internal state of the virtual devices.
 
 
 <section>
-<h2>User prompts</h2>
+<h2 id=user-prompts>User prompts</h2>
 
 <p>This chapter describes interaction with various types of <a>user prompts</a>.
  The common denominator for user prompts is that they are
@@ -8825,7 +8825,7 @@ on the <a data-lt="send an error">error representation</a>:
 </aside>
 
 <section>
-<h3><dfn>Dismiss Alert</dfn></h3>
+<h3 id=dismiss-alert><dfn>Dismiss Alert</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8862,7 +8862,7 @@ has the same effect as <a>accepting</a> it.
 </section>
 
 <section>
-<h3><dfn>Accept Alert</dfn></h3>
+<h3 id=accept-alert><dfn>Accept Alert</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8891,7 +8891,7 @@ has the same effect as <a>accepting</a> it.
 </section>
 
 <section>
-<h3><dfn>Get Alert Text</dfn></h3>
+<h3 id=get-alert-text><dfn>Get Alert Text</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8922,7 +8922,7 @@ has the same effect as <a>accepting</a> it.
 </section>
 
 <section>
-<h3><dfn>Send Alert Text</dfn></h3>
+<h3 id=send-alert-text><dfn>Send Alert Text</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8984,7 +8984,7 @@ sets the text field of a <a>window.<code>prompt</code></a>
 
 
 <section>
-<h2>Screen capture</h2>
+<h2 id=screen-capture>Screen capture</h2>
 
 <p>Screenshots are a mechanism for providing
  additional visual diagnostic information.
@@ -9073,7 +9073,7 @@ sets the text field of a <a>window.<code>prompt</code></a>
 </ol>
 
 <section>
-<h3><dfn>Take Screenshot</dfn></h3>
+<h3 id=take-screenshot><dfn>Take Screenshot</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -9115,7 +9115,7 @@ sets the text field of a <a>window.<code>prompt</code></a>
 </section> <!-- /Take Screenshot -->
 
 <section>
-<h3><dfn>Take Element Screenshot</dfn></h3>
+<h3 id=take-element-screenshot><dfn>Take Element Screenshot</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -9180,7 +9180,7 @@ that evaluates to false, the <a>element</a> will not be <a>scrolled into view</a
 </section> <!-- /Screen capture -->
 
 <section>
-<h2>Print</h2>
+<h2 id=print>Print</h2>
 
 <p>The print functions are a mechanism to render the document to a
  paginated format. It is returned to the <a>local end</a> as a Base64
@@ -9276,7 +9276,7 @@ argument <var>input</var> an implementation must:
 </ol>
 
 <section>
-<h3><dfn>Print Page</dfn></h3>
+<h3 id=print-page><dfn>Print Page</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -9438,7 +9438,7 @@ argument <var>input</var> an implementation must:
 
 
 <section class=appendix>
-<h2>Privacy</h2>
+<h2 id=privacy>Privacy</h2>
 
 <p>
 It is advisable that <a>remote ends</a>
@@ -9450,7 +9450,7 @@ ensuring both privacy and preventing state from bleeding through to the next ses
 
 
 <section class=appendix>
-<h2>Security</h2>
+<h2 id=security>Security</h2>
 
 <p>A user agent can rely on a command-line flag
  or a configuration option
@@ -9492,7 +9492,7 @@ ensuring both privacy and preventing state from bleeding through to the next ses
 
 
 <section class=appendix>
-<h2>Element displayedness</h2>
+<h2 id=element-displayedness>Element displayedness</h2>
 
 <p>Although WebDriver does not define a primitive
  to ascertain the visibility of an <a>element</a> in the <a>viewport</a>,
@@ -9533,7 +9533,7 @@ ensuring both privacy and preventing state from bleeding through to the next ses
 
 
 <section class=appendix>
-<h2>Acknowledgements</h2>
+<h2 id=acknowledgements>Acknowledgements</h2>
 
 <p>
 There have been a lot of people that have helped make
@@ -9604,7 +9604,7 @@ for proofreading and suggesting areas for improvement.
 </section>
 
 <section>
-<h2>Index</h2>
+<h2 id=index>Index</h2>
 
 <p>
 This specification relies on several other underlying specifications.
