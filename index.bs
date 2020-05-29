@@ -103,16 +103,6 @@ allows vendors to expose functionality that is specific to their browser.
 </section> <!-- /Design Notes -->
 
 
-<section id="conformance">
-<p>
-Conformance requirements phrased as algorithms
-or specific steps may be implemented in any manner,
-so long as the end result is equivalent.
-Algorithms in this document are typically written with readability,
-rather than performance, in mind.
-</section>
-
-
 <section>
 <h2 id=terminology>Terminology</h2>
 
