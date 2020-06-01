@@ -41,6 +41,16 @@ Boilerplate: conformance no, index no, idl-index no, issues-index no
 }
 </pre>
 
+<pre class=anchors>
+urlPrefix: https://w3c.github.io/accname/; type: dfn; spec: accname-1.2
+    text: Accessible Name; url: dfn-accessible-name
+    text: Accessible Name and Description Computation; url: mapping_additional_nd_te
+urlPrefix: https://w3c.github.io/aria/; type: dfn; spec: wai-aria-1.2
+    text: role; url: dfn-role
+urlPrefix: https://w3c.github.io/webappsec-csp/; type: dfn; spec: CSP
+    text: blocked by content security policy; url: should-block-navigation-response
+</pre>
+
 <script src=issue.js></script>
 
 <style>
@@ -5259,7 +5269,7 @@ Width of the <a>web element</a>’s
         of <a>trying</a> to <a>get a known connected element</a>
         with <a>url variable</a> <var>element id</var>.
 
-    <li><p>Let <var>role</var> be the result of computing the <a>WAI-ARIA role</a> of <var>element</var>.
+    <li><p>Let <var>role</var> be the result of computing the <a lt=role>WAI-ARIA role</a> of <var>element</var>.
 
     <li><p>Return <a>success</a> with data <var>role</var>.
   </ol>
@@ -9656,32 +9666,6 @@ with term described using the characters [a-zA-Z].
 This is so that the list items can be piped through sort(1)
 to automatically sort each list alphabetically.
 -->
-
-<dl>
- <dt>ARIA and related specifications
- <dd>
-   <p>The following terms are defined
-     in the Accessible Rich Internet Applications (WAI-ARIA) 1.2 specification: [[wai-aria-1.2]]
-     <ul>
-       <li><dfn><a href="https://w3c.github.io/aria/#introroles">WAI-ARIA role</a></dfn>
-     </ul>
-
-  <dd>
-    <p>The following terms are defined
-      in the Accessible Name and Description Computation 1.1 specification: [[accname-1.1]]
-      <ul>
-        <li><dfn><a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-name">Accessible Name</a></dfn>
-        <li><dfn><a href="https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_te">Accessible
-              Name and Description Computation</a></dfn>
-      </ul>
-
- <dt>Web App Security
- <dd><p>The following terms are defined
-  in the Content Security Policy Level 3 specification: [[CSP3]]
-  <ul>
-   <li><dfn><a href="https://www.w3.org/TR/CSP/#directives">Directives</a></dfn>
-   <li><dfn lt="blocked by content security policy"><a href=https://w3c.github.io/webappsec-csp/#should-block-navigation-response>Should block navigation response</a></dfn>
-  </ul>
 
  <dt>Base16, Base32, and Base64 Data Encodings
  <dd><p>The following terms are defined
