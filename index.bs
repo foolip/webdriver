@@ -23,6 +23,7 @@ Abstract: It is primarily intended to allow web authors to write tests
 Abstract: that automate a user agent from a separate controlling process,
 Abstract: but may also be used in such a way as to allow in-browser scripts
 Abstract: to control a — possibly separate — browser.
+Boilerplate: index no, idl-index no, issues-index no
 </pre>
 
 <pre class=biblio>
